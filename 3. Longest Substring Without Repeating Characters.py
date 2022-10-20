@@ -20,7 +20,8 @@ class Solution:
         mp = {}
 
         i = 0
-        # try to extend the range [i, j]
+        # two iterators i,j
+        # i index + 1 of the first repetiting char
         for j in range(n):
             if s[j] in mp and i <= mp[s[j]]:
                 i = mp[s[j]] +1
